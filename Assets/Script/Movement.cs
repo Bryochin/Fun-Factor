@@ -9,6 +9,6 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            transform.Rotate(Vector3.left * turnSpeed * Input.GetAxis("Horizontal") * Time.deltaTime);
+            transform.Rotate(Vector3.left * turnSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
     }
 }

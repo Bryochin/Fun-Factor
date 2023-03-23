@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3717484042180917489}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &901492385964085422
 MeshFilter:
@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 15
+  Explosion: {fileID: 4522135432476317714, guid: 691ff7eaef953e6429a335ac2ad221b1, type: 3}
 --- !u!96 &6756204739685961704
 TrailRenderer:
   serializedVersion: 3
