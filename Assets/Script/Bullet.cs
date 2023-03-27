@@ -23,6 +23,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Untagged")
         Explosion.SetActive(false);
 
+
         if (collision.gameObject.tag == "Ball")
             Explosion.SetActive(false);
     }

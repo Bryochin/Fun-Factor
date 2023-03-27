@@ -134,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 15
   Explosion: {fileID: 5588665118352235613}
+  start: 0
 --- !u!96 &605661733596729195
 TrailRenderer:
   serializedVersion: 3
