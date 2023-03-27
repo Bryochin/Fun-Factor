@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy")
-        ScoreScript.scoreValue += 10;
         Destroy(collision.gameObject);
         Explosion.SetActive(true);
 

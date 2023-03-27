@@ -5,21 +5,15 @@ using UnityEngine;
 public class Color_Anim : MonoBehaviour
 {
 
-    [SerializeField] private Animator myAnim;
+    [SerializeField] public Animator Walls;
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Ball"))
-        {
-            myAnim.SetBool("Trigger", true);
-        }
+            Walls.SetBool("Trigger", true);
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnCollisionExit(Collision collision)
     {
-        if (other.CompareTag("Ball"))
-        {
-            myAnim.SetBool("Trigger", false);
-        }
+            Walls.SetBool("Trigger", false);
     }
 }
