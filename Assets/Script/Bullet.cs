@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour
 {
     public float life = 3;
     public GameObject Explosion;
-
     void Awake()
     {
         Destroy(gameObject, life);
