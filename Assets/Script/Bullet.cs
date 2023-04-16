@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float life = 3;
     public GameObject Explosion;
+    public GameObject ExplosionBall;
     void Awake()
     {
         Destroy(gameObject, life);
@@ -25,6 +26,14 @@ public class Bullet : MonoBehaviour
 
 
         if (collision.gameObject.tag == "Ball")
+        {
             Explosion.SetActive(false);
+            ExplosionBall.SetActive(true);
+        }
+
+        else
+        {
+            ExplosionBall.SetActive(false);
+        }
     }
 }

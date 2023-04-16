@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 15
   Explosion: {fileID: 5588665118352235613}
-  start: 0
+  bulletPrefab: {fileID: 5249224033168649621, guid: aceff3562fbf4414e9b196a813206c3d, type: 3}
 --- !u!96 &605661733596729195
 TrailRenderer:
   serializedVersion: 3
